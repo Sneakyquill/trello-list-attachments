@@ -49,10 +49,10 @@
 
         // 👇 Optional: redirect to backend to trigger zip download
         // Replace this URL with your Render/Backend endpoint
-      //  window.open(`https://your-backend.com/download?listId=${listId}&listName=${encodeURIComponent(listName)}&boardId=${boardId}`, '_blank');
+        window.open(`https://your-backend.com/download?listId=${listId}&listName=${encodeURIComponent(listName)}&boardId=${boardId}`, '_blank');
 
         // 👇 Or just confirm to user for now
-         alert(`Download triggered for list: ${listName} (ID: ${listId})`);
+        // alert(`Download triggered for list: ${listName} (ID: ${listId})`);
 
       } catch (err) {
         console.error('Error during list image download:', err);
